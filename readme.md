@@ -1,4 +1,4 @@
-<img src="icon.png" align="right" />
+<img src="http://orig02.deviantart.net/6fb3/f/2012/106/4/b/employee_icon_by_ornorm-d4wep0s.png" align="right" />
 # My Awesome Stuff is Here [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]
 
 > A curated list My work
