@@ -5,6 +5,7 @@
   <title>My AngularJS AngularJS + RequireJS App</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -24,7 +25,7 @@
             </nav>
         </header>
 
-  <div ui-view="content"></div>
+  <div ui-view="content" ng-animate="animate" class="slide"></div>
 
 
   <script src="lib/requirejs/require.js" data-main="js/main.js"></script>

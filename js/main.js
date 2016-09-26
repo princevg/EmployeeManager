@@ -8,7 +8,9 @@ require.config({
     paths: {
         'domReady': '../lib/requirejs-domready/domReady',
         'angular': '../lib/angular/angular',
-        "uiRouter": "../lib/angular/angular-ui-router"
+        "uiRouter": "../lib/angular/angular-ui-router",
+        "jquery": "../lib/jquery/jquery-2.2.3.min",
+        "ngAnimate":""
     },
 
     /**
@@ -17,7 +19,15 @@ require.config({
      */
     shim: {
         'angular': {
-            exports: 'angular'
+            exports: 'angular',
+            deps: ['jquery']
+        },
+        "jquery":{
+            exports:'jquery'
+        },
+        "ngAnimate":{
+            exports:'ngAnimate',
+            deps: ['angular']
         },
         'uiRouter':{
             deps: ['angular']

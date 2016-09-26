@@ -2,12 +2,13 @@ define(['./app'], function (app) {
     'use strict';
     return app.config(function ($stateProvider) {
         $stateProvider.state('home', {
-            url: '/home/{mode}',
+            url: '/home/:mode',
             views: {
                 'content@': {
                     templateUrl:
                             function ($stateParams) {
-                                return 'partials/' + $stateParams.mode + '.html';
+                                var mode = $stateParams.mode.split("-")[0];
+                                    return 'partials/' + mode + '.html';
                             }
                 }
             },
