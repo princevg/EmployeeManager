@@ -1,0 +1,66 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+.card-container {
+    box-shadow: 3px 4px 5px #888888;
+    padding: 15px;
+}
+.card-container .cart-btn {
+    background-color: #FF5722;
+    border-color: #F44336;
+}
+.card-container .cart-btn:hover{
+   background-color: rgb(255, 105, 34);
+   border-color: #F44336;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.help-block {
+	color: red;
+}
+.navbar-brand {
+padding: 4px!important;
+}
+.navbar-brand img {
+	width: 75px;
+}
+
+.form-button {
+	text-align: center;
+}
+
+.jumbotron.text-center {
+    padding: 5px;
+}

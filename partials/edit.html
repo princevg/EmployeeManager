@@ -1,0 +1,32 @@
+<div class="container">
+<div class="row col-lg-6 col-sm-8 col-md-6 col-xs-12">
+<form ng-controller="EmpEdit_Ctrl" name="empForm" class="form horizontal" ng-submit="submitForm(empForm.$valid)" novalidate>
+	<div class="form-group">
+		<label for="">Employee ID:(only 5-digits)</label>
+		<input type="number" class="form-control" ng-model="employee.id" name="id" ng-minlength="5" ng-maxlength="5" required>
+
+	</div>
+	<div class="form-group">
+		<label for="">First Name:</label>
+		<input type="text" class="form-control" ng-model="employee.fname" name="fname" required>
+		<p ng-show="empForm.fname.$invalid && submitted" class="help-block">First Name is required.</p>
+	</div>
+	<div class="form-group">
+		<label for="">Last Name:</label>
+		<input type="text" class="form-control" ng-model="employee.lname" name="lname" required>
+		<p ng-show="empForm.lname.$invalid && submitted" class="help-block">Last Name is required.</p>
+	</div>
+	<div class="form-group">
+		<label for="">Designation:</label>
+		<input type="text" class="form-control" ng-model="employee.desig" name="desig" required>
+		<p ng-show="empForm.desig.$invalid && submitted" class="help-block">Designation is required.</p>
+	</div>
+	<div class="form-group form-button">
+      	<button type="submit" class="btn btn-primary" ng-click="save(empForm.$valid);" >Save</button>
+    </div>
+    <div class="form-group form-button">
+      	<button type="submit" class="btn btn-primary" ng-click="update(empForm.$valid);" >Update</button>
+    </div>	
+</form>
+</div>
+</div>
