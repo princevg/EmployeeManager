@@ -1,1 +1,1 @@
-See this example [in browser](https://princevg.github.io/EmployeeManager).
+See this example [in browser](https://princevg.github.io/EmployeeManager/#/home/list).
