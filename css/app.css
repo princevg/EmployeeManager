@@ -124,3 +124,8 @@ padding: 4px!important;
 td.buttons {
     text-align: center;
 }
+
+a.sortable-link {
+    font-size: 18px;
+    font-weight: bold;
+}

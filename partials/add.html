@@ -1,41 +1,41 @@
 <div class="container">
     <div class="row col-lg-12 col-sm-12 col-md-12 col-xs-12">
         <form ng-controller="EmpAdd_Ctrl" name="empForm" class="form horizontal" ng-submit="submitForm(empForm.$valid)" novalidate>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">Employee ID</label>
                 <input type="number" class="form-control" ng-model="employee.empid" name="id" ng-minlength="5" ng-maxlength="5" required>
 
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">First Name:</label>
                 <input type="text" class="form-control" ng-model="employee.fname" name="fname" required>
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">Last Name:</label>
                 <input type="text" class="form-control" ng-model="employee.lname" name="lname" required>
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">Designation:</label>
                 <input type="text" class="form-control" ng-model="employee.desig" name="desig" required>
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">Phone Number</label>
                 <input type="text" ng-model="emp.phn" phone-number class="form-control" />
             </div>
 
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">Basic Sal</label>
                 <input type="text" number-only ng-model="employee.salary.baseSal" ng-value="${{employee.salary.baseSal}}" ng-change="updateSalary()" class="form-control" />
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">HRA</label>
                 <input type="text" number-only ng-model="employee.salary.hra" ng-change="updateSalary()" class="form-control" />
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">
                 <label for="">Special Allowance</label>
                 <input type="text" number-only ng-model="employee.salary.spclAllowance" ng-change="updateSalary()" class="form-control" />
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">           
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">           
                 <label for="">Gross Salary</label>
                 <input type="text" number-only ng-model="employee.salary.grossSal" ng-change="updateSalarySplitup()" class="form-control" />
             </div>
@@ -51,7 +51,7 @@
                 <input type="text" id="field1" name = "field1" tabindex="1" maxlength="5" move-focus ng-model="employee.key.field3" class="form-control" />
                 </div>
             </div>
-            <div class="form-group col-lg-4 col-sm-6 col-md-4 col-xs-12">           
+            <div class="form-group col-lg-4 col-sm-12 col-md-4 col-xs-12">           
                 <label for="">Please Enter corrected salary in USD</label>
                 <input type="text" currency-input ng-model="employee.salary.USDsal" class="form-control" />
             </div>

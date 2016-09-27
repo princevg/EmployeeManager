@@ -1,6 +1,7 @@
 define(['./app'], function (app) {
     'use strict';
     return app.config(function ($stateProvider) {
+        //$urlRouterProvider.otherwise("home");
         $stateProvider.state('home', {
             url: '/home/:mode',
             views: {
@@ -20,5 +21,5 @@ define(['./app'], function (app) {
                     templateUrl: 'partials/partial2.html',
                     controller: 'MyCtrl2'
                 });
-    })
+    });
 });
