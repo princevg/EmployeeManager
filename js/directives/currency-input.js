@@ -47,8 +47,11 @@ define(['./module'], function (directives) {
                     decPart = "." + decPart;
                 }
                 var res = intPart + decPart;
-                    if(res.length > 0){
-                        "$" + res
+                    if(res.length > 0 && res.indexOf("$") != -1){
+                        res = "$" + res;
+                    }
+                    else if( res.length == 1 && res.indexOf("$") != -1){
+                       res = "";
                     }
                 if (res != inputValue) {
                     ctrl.$setViewValue(res);
