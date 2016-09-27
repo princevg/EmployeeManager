@@ -46,8 +46,10 @@ define(['./module'], function (directives) {
                 else {
                     decPart = "." + decPart;
                 }
-                var res = "$"+intPart + decPart;
-
+                var res = intPart + decPart;
+                    if(res.length > 0){
+                        "$" + res
+                    }
                 if (res != inputValue) {
                     ctrl.$setViewValue(res);
                     ctrl.$render();
